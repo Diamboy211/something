@@ -3,7 +3,7 @@ var triplePower = new Decimal(0)
 var num = new Decimal(4)
 
 function updateGUI() {
-  document.getElementById(“num”).textContent = “number: ” + num
+  document.getElementById(“num”).textContent = "number: " + num
 }
 
 function looping() {
