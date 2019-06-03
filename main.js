@@ -14,5 +14,11 @@ function number() {
   num = pow(2, pow(2, pow(2, triplePower)))
 
 function mainLoop() {
+  number(),
+  looping(),
+  updateGUI(),
+}
   
-
+  updateGUI()
+  
+  setInterval(mainLoop, 50)
