@@ -1,4 +1,4 @@
-import break_eternity
+import "break_eternity";
 var triplePower = new Decimal(0)
 var num = new Decimal(4)
 
@@ -14,9 +14,9 @@ function number() {
   num = pow(2, pow(2, pow(2, triplePower)))
 
 function mainLoop() {
-  number(),
-  looping(),
-  updateGUI(),
+  number();
+  looping();
+  updateGUI()
 }
   
   updateGUI()
