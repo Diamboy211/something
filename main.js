@@ -1,5 +1,6 @@
 var triplePower = new Decimal(0)
 var num = new Decimal(4)
+var base = new Decimal(2)
 
 function updateGUI() {
   document.getElementById(“num”).textContent = "number: " + num
@@ -10,7 +11,7 @@ function looping() {
 }
 
 function number() {
-  num = pow(2, pow(2, pow(2, triplePower)))
+  num = base.pow(base.pow(base.pow(triplePower)))
 
 function mainLoop() {
   number();
