@@ -1,4 +1,3 @@
-import "break_eternity";
 var triplePower = new Decimal(0)
 var num = new Decimal(4)
 
