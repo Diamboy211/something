@@ -1,4 +1,4 @@
-var triplePower = new Decimal(0)
+var expo = 0
 var num = new Decimal(4)
 var base = new Decimal(2)
 
@@ -7,11 +7,12 @@ function updateGUI() {
 }
 
 function looping() {
-  add(triplePower, new Decimal(0.01))
+  expo++
 }
 
 function number() {
-  num = base.pow(base.pow(base.pow(triplePower)))
+  num = base.pow(expo)
+}
 
 function mainLoop() {
   number();
