@@ -8,4 +8,4 @@ function updateGUI() {
   document.getElementById("num").textContent = "number: " + num
 }
 
-setInterval(mainLoop, 50)
+setInterval(updateGUI, 50)
