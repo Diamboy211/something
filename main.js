@@ -3,18 +3,18 @@ var num = new Decimal(4)
 var base = new Decimal(2)
 
 function updateGUI() {
-  document.getElementById(“num”).textContent = "number: " + num
+  document.getElementById("num").textContent = "number: " + num
 }
 
 function looping() {
-  expo++
+  expo += 0.005
 }
 
 function number() {
-  num = base.pow(expo)
+  num = base.pow(base.pow(base.pow(expo)))
 }
 
-function mainLoop() {
+function mainLoop(a) {
   number();
   looping();
   updateGUI()
