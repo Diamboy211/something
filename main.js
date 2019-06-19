@@ -1,9 +1,9 @@
-var expo = -12
+var expo = 0
 var num = new Decimal(4)
-var base = new Decimal(1.01)
+var base = new Decimal(1.66)
 
 function updateGUI() {
-  num = base.pow(base.pow(base.pow(base.pow(base.pow(base.pow(expo))))));
+  num = base.tetrate(expo)
   expo += 0.0005;
   document.getElementById("num").textContent = "number: " + num
 }
