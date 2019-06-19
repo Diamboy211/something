@@ -4,8 +4,8 @@ var base = new Decimal(1.01)
 
 function updateGUI() {
   num = base.pow(base.pow(base.pow(base.pow(base.pow(base.pow(expo))))));
-  expo += 0.00004;
+  expo += 0.0005;
   document.getElementById("num").textContent = "number: " + num
 }
 
-setInterval(updateGUI, 50)
+setInterval(updateGUI, 20)
