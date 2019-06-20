@@ -15,6 +15,7 @@ function format(number) {
   else {
     return m.toFixed(2) + e
   }
+}
 
 function updateGUI() {
   num = format(base.tetrate(base.pow(multiplier.mul(expo))))
