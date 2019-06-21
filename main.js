@@ -10,7 +10,7 @@ function format(number) {
   let m = n.div(ten.pow(e))
   let h = n.slog(10)
   if (e.slog(10).cmp(2) > 0) {
-    if (e.slog(10).cmp(6) > 0) {
+    if (e.slog(10).cmp(3) > 0) {
       let hBig = new Decimal(h)
       let eBig = hBig.log10().floor()
       let mBig = hBig.div(ten.pow(eBig))
