@@ -9,7 +9,7 @@ function format(number) {
   let e = n.log10().floor()
   let m = n.div(ten.pow(e))
   let h = n.slog(10)
-  if (e.slog(10).cmp(3) > 0) {
+  if (e.slog(10).cmp(2) > 0) {
     return "10^^" + h.toFixed(2)
   }
   else {
