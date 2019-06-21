@@ -11,8 +11,13 @@ function format(number) {
   let h = n.slog(10)
   if (e.slog(10).cmp(2) > 0) {
     if (e.slog(10).cmp(6) > 0) {
-      return "10^^" + format(h)
+      let eBig = h.log10().floor()
+      let mBig = h.div(ten.pow(eBig))
+      return "10^^" + mBig.toFixed(2) + "e" + eBig
+    }
+    else {
       return "10^^" + h.toFixed(2)
+    }
   }
   else {
     return m.toFixed(2) + "e" + e
