@@ -1,7 +1,6 @@
 var expo = 0
 var num = new Decimal(4)
 var base = new Decimal(1.66)
-var multiplier = new Decimal(4)
 var ten = new Decimal(10)
 
 function format(number) {
@@ -26,7 +25,7 @@ function format(number) {
 }
 
 function updateGUI() {
-  num = format(base.tetrate(base.pow(multiplier.mul(expo))))
+  num = format(base.tetrate(base.tetrate(expo)))
   expo += 0.0005;
   document.getElementById("num").textContent = "number: " + num
 }
