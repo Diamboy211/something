@@ -9,13 +9,6 @@ function format(number) {
   let m = n.div(ten.pow(e))
   let h = n.slog(10)
   if (n.slog(10).cmp(3) > 0) {
-    if (n.slog(10).cmp(1000) > 0) {
-      let hBig = new Decimal(h)
-      let eBig = hBig.log10().floor()
-      let mBig = hBig.div(ten.pow(eBig))
-      return "10^^" + mBig.toFixed(2) + "e" + eBig
-    }
-    else {
       return "10^^" + h.toFixed(2)
     }
   }
@@ -25,8 +18,8 @@ function format(number) {
 }
 
 function updateGUI() {
-  num = format(base.tetrate(base.pow(expo)))
-  expo += 0.0005;
+  num = format(base.tetrate(base.tetrate(expo)));
+  expo += document.getElementById("speed");
   document.getElementById("num").textContent = "number: " + num
 }
 
