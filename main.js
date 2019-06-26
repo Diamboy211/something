@@ -4,13 +4,12 @@ var base = new Decimal(1.66)
 var ten = new Decimal(10)
 /*For displaying big numbers in your website
 you can copy the array and use
+var array = []
 for (let i = 0; i < array.length; i++) {
   document.getElementById(id).textContent = array[i]
 }
-and you can remove line 32
+and you can remove line 30
 */
-var array = []
-
 function format(number) {
   let n = new Decimal(number)
   let e = n.log10().floor()
@@ -28,7 +27,6 @@ function format(number) {
 function updateGUI() {
   num = format(base.tetrate(base.tetrate(expo)));
   expo += 0.00005;
-  num.push(array);
   document.getElementById("num").textContent = "number: " + num
 }
 
