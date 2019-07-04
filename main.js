@@ -18,14 +18,13 @@ function format(number) {
   if (n.slog(10).cmp(3) > 0) {
       return "10^^" + h.toFixed(2)
     }
-  }
-  else {
+  } else {
     return m.toFixed(2) + "e" + e
   }
 }
 
 function updateGUI() {
-  num = format(base.tetrate(base.tetrate(expo)));
+  num = format(base.tetrate(base.pow(expo)));
   expo += 0.00005;
   document.getElementById("num").textContent = "number: " + num
 }
