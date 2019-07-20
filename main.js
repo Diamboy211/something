@@ -17,7 +17,6 @@ function format(number) {
   let h = n.slog(10)
   if (n.slog(10).cmp(3) > 0) {
       return "10^^" + h.toFixed(2)
-    }
   } else {
     return m.toFixed(2) + "e" + e
   }
