@@ -24,7 +24,7 @@ function format(number) {
 
 function updateGUI() {
   num = format(base.tetrate(base.pow(expo)));
-  expo += 0.00005;
+  expo += 0.0005;
   document.getElementById("num").textContent = "number: " + num
 }
 
