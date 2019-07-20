@@ -8,7 +8,7 @@ var array = []
 for (let i = 0; i < array.length; i++) {
   document.getElementById(id).textContent = array[i]
 }
-and you can remove line 30
+and you can remove line 28
 */
 function format(number) {
   let n = new Decimal(number)
